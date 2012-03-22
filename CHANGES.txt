@@ -1,0 +1,16 @@
+0.3
+===
+
+Remove unwanted html in video template
+
+0.2
+===
+
+Add support for Vimeo and Daylimotion
+
+
+0.1
+===
+
+Initial release
+

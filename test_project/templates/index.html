@@ -1,0 +1,10 @@
+{% load video_tags %}
+
+{% video_form object %}
+
+{% get_videos_for object as "videos" %}
+{% for video in videos %}
+  {% embed_video video 230x200 %}
+  {% embed_video video 640x505 %}
+{% endfor %}
+

@@ -1,0 +1,11 @@
+{% extends "!layout.html" %}
+{% set favicon = pathto("favicon.ico", 1) %}
+
+{% block header %}
+<div style="background:url({{pathto("_static/top_bg.jpg", 1)}}) repeat-x scroll left top transparent;">
+  <a title="Bearstech" href="http://www.bearstech.com">
+    <img alt="bearstech" src="{{pathto("_static/logo.jpg", 1)}}" />
+  </a>
+</div>
+{% endblock %}
+

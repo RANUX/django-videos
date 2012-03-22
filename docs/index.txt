@@ -1,0 +1,61 @@
+.. django-videos documentation master file, created by
+   sphinx-quickstart on Fri May 28 16:46:51 2010.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to django-videos's documentation!
+=========================================
+
+.. include:: ../README.txt
+
+Installation
+===============
+
+With easy_install::
+
+  $ easy_install -U django-videos
+
+With pip:
+
+  $ pip install django-videos
+
+Configuration
+================
+
+With DjangoPluggableApp::
+
+  PLUGGABLE_APPS = ('djangovideos', )
+
+Manual...
+
+setting.py::
+
+  TEMPLATE_DIRS = (
+   '/your_path/django-videos/djangovideos/templates',
+  )
+  TEMPLATE_CONTEXT_PROCESSORS = (
+   'django.core.context_processors.i18n',
+   'django.core.context_processors.request'
+  )
+  INSTALLED_APPS = (
+   'djangovideos'
+  )
+ 
+urls.py::
+
+  urlpatterns = patterns('',
+    ('^videos/', include('djangovideos.urls')),
+  )
+  
+Simple usage
+================
+
+.. literalinclude:: ../test_project/templates/index.html
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

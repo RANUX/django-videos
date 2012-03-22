@@ -1,0 +1,14 @@
+{% load i18n %}
+{% if form %}
+<form method="post" action="{{ form_url }}" class="add-video">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}"/>
+    <p>
+      {% trans "You can upload embedded video tag or url from youtube or vimeo for instance" %}
+    </p>
+    {{ form.as_p }}
+    <p class="submit">
+        <input type="submit" value="{% trans "Add video" %}"/>
+    </p>
+</form>
+{% endif %}
